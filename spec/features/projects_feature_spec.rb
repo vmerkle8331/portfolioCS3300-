@@ -6,7 +6,23 @@ RSpec.feature "Projects", type: :feature do
         visit edit_project_path(project)
       end
  
+      scenario "should be successful" do
+        within("form") do
+          fill_in "Title", with: "NTitle"
+        end
+        click_button "Update Project"
+        expect(page).to have_content("Project was successfully updated")
+      end
  
+ 
+      scenario "should fail" do
+        within("form") do
+          fill_in "Title", with: ""
+        end
+        click_button "Update Project"
+        expect(page).to have_content("Title can't be blank")
+      end
+
       scenario "should be successful" do
         within("form") do
           fill_in "Description", with: "New description content"
