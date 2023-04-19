@@ -5,10 +5,11 @@
         "lines": [
           1,
           1,
+          1,
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           null,
@@ -81,6 +82,13 @@
           null
         ]
       },
+      "/root/portfolioCS3300-/app/models/project.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/root/portfolioCS3300-/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -149,8 +157,11 @@
         "branches": {
         }
       },
-      "/root/portfolioCS3300-/app/models/project.rb": {
+      "/root/portfolioCS3300-/app/models/user.rb": {
         "lines": [
+          0,
+          null,
+          null,
           0,
           0,
           0
@@ -159,6 +170,6 @@
         }
       }
     },
-    "timestamp": 1680829228
+    "timestamp": 1681863022
   }
 }
